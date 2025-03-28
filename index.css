@@ -95,6 +95,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
     background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("9252.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -102,12 +103,17 @@
     
 }
 .hero-contain{
-    width: 600px;
+    max-width:800px;
     padding: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .hero-contain h1{
-    font-size:4.1rem;
-    font-weight:600;
+    font-size:5.1rem;
+    font-weight:900;
     color: var(--ast-global-color-4);
     line-height: 1.4rem;
     margin-bottom: 40px;
@@ -144,7 +150,9 @@
 
 @media screen and (max-width:992px){
     .hero-contain h1{
-        font-size: 2.5rem;
+        font-size: 3.5rem;
+        line-height:2.5rem;
+        font-weight: 800;
     }   
 }
 
@@ -196,6 +204,11 @@
 .top-container{
     flex-direction:column ;
     gap:15px;
+}
+
+.hero{
+height: 80vh;
+
 }
    
 }
