@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 :root{
 --primarey-color: #254a52;
 --ast-global-color-1: #a9d0c9;
@@ -113,14 +115,15 @@
 }
 .hero-contain h1{
     font-size:5.1rem;
+    font-family: "Open Sans", sans-serif;
     font-weight:900;
     color: var(--ast-global-color-4);
     line-height: 1.4rem;
-    margin-bottom: 40px;
+    margin-bottom:3rem;
 }
 .hero-contain p{
     font-size:2rem;
-    color: var(--ast-global-color-3);
+    color: var(--ast-global-color-4);
     margin-bottom: 1.7rem;
 }
 .contact-button{
