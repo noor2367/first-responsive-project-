@@ -213,6 +213,11 @@
 height: 80vh;
 
 }
+.hero-contain p{
+    font-size: 30px;
+    line-height: 36px;
+    font-family: sans-serif;
+}
    
 }
 
