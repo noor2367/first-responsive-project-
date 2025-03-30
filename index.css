@@ -18,7 +18,7 @@
     box-sizing: border-box;
 }
 .container{
-    max-width: 95%;
+    max-width:90%;
     margin: 0% auto;
 }
 .top-bar{
@@ -151,6 +151,83 @@
     letter-spacing: 2.5px;
 }
 
+.footer-section{
+    background: linear-gradient(var(--ast-global-color-6), #3a3a3a);
+    padding: 80px 0px 0px 0px;
+    margin-top:80px;
+    color: white;
+}
+
+.footer-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom:80px;
+}
+.footer-coloumn h4{
+    font-size: 1.3rem;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: var(--ast-global-color-3);  
+}
+
+.footer-coloumn h4::after{
+    content: "";
+    width:50px;
+    height:2px;
+    background-color: var(--ast-global-color-4);
+    display: block;
+    margin-top: 20px;
+   
+}
+
+.footer-link{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-link li{
+    margin-bottom: 12px;
+}
+.footer-link li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.footer-iteam{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size:1.1rem;
+    font-family: sans-serif;
+}
+.contact-icon{
+    margin-right:10px;
+    margin-top:2px;
+}
+.footer-coloumn iframe {
+    width: 100%;
+    height: 250px;
+    margin-top:10px;
+}
+.footer-bottom{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:#434546;
+    font-family: sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
 @media screen and (max-width:992px){
     .hero-contain h1{
         font-size: 3.5rem;
@@ -218,7 +295,33 @@ height: 80vh;
     line-height: 36px;
     font-family: sans-serif;
 }
-   
+.footer-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+.footer-coloumn h4{
+    font-size: 1.2rem;
+}
+.footer-link li a {
+    font-size:1rem;
+   }
+   .footer-iteam{
+    justify-content: center;
+   }
+   .footer-coloumn h4::after{
+    margin: 10px auto;
+   }
 }
 
-
+@media screen and (max-width:480px){
+    .footer-coloumn{
+        text-align: center;
+    }
+    .footer-iteam{
+        justify-content: center;  
+    }
+    .footer-link li a{
+        justify-content: center;
+    }
+}
